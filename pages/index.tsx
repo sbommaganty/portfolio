@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div className="isolate bg-white">
       <Head>
-        <title>Next Example</title>
+        <title>Ariful Alam</title>
         <meta
           name="description"
           content="This app will cover nextjs, tailwindcss, typescript, eslint and prettier."
@@ -61,7 +61,7 @@ export default function Home() {
           >
             <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">
               <Link href="/" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
+                <span className="sr-only">Title</span>
                 <svg
                   className="h-8"
                   xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +115,7 @@ export default function Home() {
               <div className="flex h-9 items-center justify-between">
                 <div className="flex">
                   <Link href="/" className="-m-1.5 p-1.5">
-                    <span className="sr-only">Your Company</span>
+                    <span className="sr-only">Title</span>
                     <svg
                       className="h-8"
                       xmlns="http://www.w3.org/2000/svg"
