@@ -12,7 +12,7 @@ export default function Document() {
         <link rel="shortcut icon" href="/static/favicon.ico" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </Head>
-      <body>
+      <body className="bg-white dark:bg-black">
         <Main />
         <NextScript />
       </body>
