@@ -1,6 +1,6 @@
 export const APP_TITLE = "Ariful Alam";
 export const APP_DESCRIPTION = "This is my portfolio website.";
-export const MY_IMAGE_URL = "/static/avatar.jpg";
+export const MY_IMAGE_URL = "https://www.arifulalam.com/static/avatar.jpg";
 export const socialLinks = {
   facebook: "https://www.facebook.com/alamariful1727",
   linkedin: "https://www.linkedin.com/in/alamariful1727",
