@@ -12,9 +12,9 @@ export const worksNavigation = { name: "Works", href: "/works" };
 export const projectsNavigation = { name: "Projects", href: "/projects" };
 export const contactNavigation = { name: "Contact", href: "/contact" };
 
-export const innerNavigation = [
+export const outerNavigation = [
   aboutNavigation,
   worksNavigation,
   projectsNavigation,
+  contactNavigation,
 ];
-export const outerNavigation = [...innerNavigation, contactNavigation];
