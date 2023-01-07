@@ -73,7 +73,7 @@ const MainLayout = ({ children }: props) => {
     <div className="isolate antialiased">
       <BackgroundEffect1 />
       <Navbar />
-      <main className="relative p-6 lg:p-8">
+      <main className="relative px-6 py-8">
         {children}
         <BackgroundEffect2 />
       </main>
