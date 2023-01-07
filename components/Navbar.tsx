@@ -70,7 +70,7 @@ const Navbar = () => {
             <Link
               key={name}
               href={href}
-              className="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+              className="font-semibold text-gray-600 transition hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
             >
               {name}
             </Link>
@@ -132,7 +132,7 @@ const Navbar = () => {
                   <Link
                     key={name}
                     href={href}
-                    className="-mx-3 block rounded-lg py-2 px-3 text-center text-base font-semibold leading-7 text-gray-600 hover:bg-gray-400/10 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-400/40 dark:hover:text-white"
+                    className="-mx-3 block rounded-lg py-2 px-3 text-center text-base font-semibold leading-7 text-gray-600 transition hover:bg-gray-400/10 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-400/40 dark:hover:text-white"
                     onClick={handleMobileMenuClose}
                   >
                     {name}
