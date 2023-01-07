@@ -74,7 +74,7 @@ export default function Footer() {
           <div key={item.name} className="px-5 py-2">
             <Link
               href={item.href}
-              className="text-base text-gray-500 transition hover:text-gray-900"
+              className="text-base text-gray-500 transition hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
             >
               {item.name}
             </Link>
@@ -88,14 +88,14 @@ export default function Footer() {
             href={item.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 transition hover:text-gray-500"
+            className="text-gray-500 transition hover:text-gray-500 dark:text-gray-400 dark:hover:text-white"
           >
             <span className="sr-only">{item.name}</span>
             <item.icon className="h-6 w-6" aria-hidden={true} />
           </a>
         ))}
       </div>
-      <p className="mt-8 text-center text-base text-gray-400">
+      <p className="mt-8 text-center text-base text-gray-400 dark:text-gray-500">
         &copy; {new Date().getFullYear()} Ariful Alam. All rights reserved.
       </p>
     </footer>
