@@ -13,18 +13,18 @@ export const SEO = ({ siteTitle, description, url, image }: props) => {
     <Head>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       {/* <!-- Primary Meta Tags --> */}
-      <title>{siteTitle ? `${siteTitle} | ${APP_TITLE}` : APP_TITLE}</title>
+      <title>{siteTitle ? `${siteTitle} - ${APP_TITLE}` : APP_TITLE}</title>
       <meta name="description" content={description || APP_DESCRIPTION} />
 
       {/* <!-- Open Graph / Facebook --> */}
       <meta property="og:type" content="website" />
       <meta
         property="og:title"
-        content={siteTitle ? `${siteTitle} | ${APP_TITLE}` : APP_TITLE}
+        content={siteTitle ? `${siteTitle} - ${APP_TITLE}` : APP_TITLE}
       />
       <meta
         property="og:site_name"
-        content={siteTitle ? `${siteTitle} | ${APP_TITLE}` : APP_TITLE}
+        content={siteTitle ? `${siteTitle} - ${APP_TITLE}` : APP_TITLE}
       />
       <meta
         property="og:description"
@@ -38,7 +38,7 @@ export const SEO = ({ siteTitle, description, url, image }: props) => {
       <meta property="twitter:creator" content={socialLinks.twitter} />
       <meta
         property="twitter:title"
-        content={siteTitle ? `${siteTitle} | ${APP_TITLE}` : APP_TITLE}
+        content={siteTitle ? `${siteTitle} - ${APP_TITLE}` : APP_TITLE}
       />
       <meta
         property="twitter:description"
