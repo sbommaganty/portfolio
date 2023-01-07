@@ -2,11 +2,40 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import { useTheme } from "next-themes";
+import { useRouter } from "next/router";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import cn from "classnames";
 import { navigation } from "config";
 
 const ThemeToggleButton = dynamic(() => import("./ThemeToggleButton"));
+
+interface NavItemProps {
+  href: string;
+  label: string;
+}
+
+const NavItem = ({ href, label }: NavItemProps) => {
+  const router = useRouter();
+  const isActive = router.asPath === href;
+
+  return (
+    <Link
+      href={href}
+      className={cn(
+        {
+          "border-gray-600 font-semibold text-gray-700 dark:border-white dark:text-white":
+            isActive,
+          "border-transparent text-gray-600 hover:border-b hover:border-gray-400 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white":
+            !isActive,
+        },
+        "border-b-2 pb-1 transition-all"
+      )}
+    >
+      {label}
+    </Link>
+  );
+};
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -66,15 +95,10 @@ const Navbar = () => {
           </button>
         </div>
         <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-end lg:gap-x-12">
-          {navigation.header.map(({ name, href }) => (
-            <Link
-              key={name}
-              href={href}
-              className="font-semibold text-gray-600 transition hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
-            >
-              {name}
-            </Link>
-          ))}
+          {mounted &&
+            navigation.header.map(({ name, href }) => (
+              <NavItem key={name} href={href} label={name} />
+            ))}
           {mounted && <ThemeToggleButton />}
         </div>
       </nav>
