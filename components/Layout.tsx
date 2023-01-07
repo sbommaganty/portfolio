@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 interface props {
@@ -70,13 +71,14 @@ const BackgroundEffect2 = () => {
 
 const MainLayout = ({ children }: props) => {
   return (
-    <div className="isolate antialiased">
+    <div className="isolate flex min-h-screen flex-col justify-between antialiased">
       <BackgroundEffect1 />
       <Navbar />
-      <main className="relative px-6 py-8">
+      <main className="relative flex-1 px-6 py-8">
         {children}
         <BackgroundEffect2 />
       </main>
+      <Footer />
     </div>
   );
 };
