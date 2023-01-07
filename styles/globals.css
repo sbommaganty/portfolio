@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-container {
+  @apply mx-auto mb-16 flex w-full max-w-5xl flex-col items-start justify-center sm:mt-16;
+}
