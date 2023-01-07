@@ -4,8 +4,8 @@ import dynamic from "next/dynamic";
 import { useTheme } from "next-themes";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { outerNavigation } from "config";
-// import ThemeToggleButton from "./ThemeToggleButton";
+import { navigation } from "config";
+
 const ThemeToggleButton = dynamic(() => import("./ThemeToggleButton"));
 
 const Navbar = () => {
@@ -19,7 +19,7 @@ const Navbar = () => {
   useEffect(() => setMounted(true), []);
 
   return (
-    <div className="px-6 pt-6 lg:px-8">
+    <header className="px-6 pt-6 lg:px-8">
       <nav
         className="flex h-9 items-center justify-between"
         aria-label="Global"
@@ -66,7 +66,7 @@ const Navbar = () => {
           </button>
         </div>
         <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-end lg:gap-x-12">
-          {outerNavigation.map(({ name, href }) => (
+          {navigation.header.map(({ name, href }) => (
             <Link
               key={name}
               href={href}
@@ -128,7 +128,7 @@ const Navbar = () => {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10 dark:divide-gray-500/50">
               <div className="space-y-2 py-6">
-                {outerNavigation.map(({ name, href }) => (
+                {navigation.header.map(({ name, href }) => (
                   <Link
                     key={name}
                     href={href}
@@ -146,7 +146,7 @@ const Navbar = () => {
           </div>
         </Dialog.Panel>
       </Dialog>
-    </div>
+    </header>
   );
 };
 
