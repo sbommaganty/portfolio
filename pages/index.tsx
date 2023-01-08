@@ -26,7 +26,7 @@ export default function Home() {
           </span>
         </Link>
         <Link
-          href={worksNavigation.name}
+          href={worksNavigation.href}
           className="group inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 ring-1 ring-gray-300 hover:ring-gray-400 dark:text-gray-300 dark:ring-gray-300 dark:hover:text-white dark:hover:ring-white"
         >
           {worksNavigation.name}{" "}
