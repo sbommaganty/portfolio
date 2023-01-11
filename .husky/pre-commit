@@ -4,7 +4,8 @@
 
 echo '🏗️👷 Styling, testing and building your project before committing'
 
-npx lint-staged
+# Disable concurent to run `check-types` after ESLint in lint-staged
+npx lint-staged --concurrent false
 
 # # Check Prettier standards
 # npm run check-format ||
@@ -23,23 +24,21 @@ npx lint-staged
 # )
 
 # Check tsconfig standards
-npm run check-types ||
-(
-    echo '🤡😂❌🤡 Failed Type check. 🤡😂❌🤡
-            Are you seriously trying to write that? Make the changes required above.'
-    false;
-)
+# npm run check-types ||
+# (
+#     echo '🤡😂❌🤡 Failed Type check. 🤡😂❌🤡
+#             Are you seriously trying to write that? Make the changes required above.'
+#     false;
+# )
 
 # If everything passes... Now we can commit
-echo '🤔🤔🤔🤔... Alright.... Code looks good to me... Trying to build now. 🤔🤔🤔🤔'
+# echo '🤔🤔🤔🤔... Alright.... Code looks good to me... Trying to build now. 🤔🤔🤔🤔'
 
-npm run build ||
-(
-    echo '❌👷🔨❌ Better call Bob... Because your build failed ❌👷🔨❌
-            Next build failed: View the errors above to see why. 
-    '
-    false;
-)
-
-# If everything passes... Now we can commit
+# npm run build ||
+# (
+#     echo '❌👷🔨❌ Better call Bob... Because your build failed ❌👷🔨❌
+#             Next build failed: View the errors above to see why. 
+#     '
+#     false;
+# )
 echo '✅✅✅✅ You win this time... I am committing this now. ✅✅✅✅'
