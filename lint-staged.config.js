@@ -5,4 +5,5 @@ module.exports = {
     "npm run check-lint:fix",
     "npm run check-lint",
   ],
+  "**/*.ts?(x)": () => "npm run check-types",
 };
