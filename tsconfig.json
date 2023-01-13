@@ -25,6 +25,7 @@
     "tailwind.config.js",
     "next.config.js",
     "postcss.config.js",
+    "lint-staged.config.js",
     "**/*.ts",
     "**/*.tsx"
   ],
