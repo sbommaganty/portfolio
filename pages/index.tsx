@@ -6,12 +6,20 @@ export default function Home() {
   return (
     <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
       <SEO />
-      <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
-        Ariful Alam
-      </h1>
-      <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-200 sm:text-center">
-        Hello, World! I&apos;m a Software Engineer.
-      </p>
+      <div className="space-y-3">
+        <p className="text-xl text-gray-600 dark:text-gray-300 sm:text-2xl sm:tracking-wide">
+          Hello, World! My name is
+        </p>
+        <h1 className="text-5xl font-bold tracking-tight sm:text-7xl">
+          Ariful Alam.
+        </h1>
+        <p className="text-3xl text-gray-500 dark:text-gray-400 sm:text-4xl">
+          I love to code{" "}
+          <span className="font-bold text-gray-700 dark:text-white">
+            because it is an usable art.
+          </span>
+        </p>
+      </div>
       <div className="mt-8 flex gap-x-4 sm:justify-center">
         <Link
           href={projectsNavigation.href}
