@@ -1,23 +1,22 @@
 import Link from "next/link";
 
-interface props {
-  label: string;
-  href?: string;
-  showLink?: boolean;
-}
+type ChipProps = { label: string } & (
+  | { type: "link"; href: string }
+  | { type?: "normal"; href?: never }
+);
 
-const Chip = ({ label, href, showLink = false }: props) => {
-  const isInternalLink = href?.startsWith("/");
+const Chip = ({ type = "normal", label, ...rest }: ChipProps) => {
+  if (type === "link" && rest.href) {
+    const isInternalLink = rest.href.startsWith("/");
 
-  if (showLink && href) {
     return isInternalLink ? (
-      <Link href={href}>
+      <Link href={rest.href}>
         <span className="rounded-lg bg-gray-100 py-2 px-3 not-italic leading-none text-gray-700">
           {label}
         </span>
       </Link>
     ) : (
-      <a href={href}>
+      <a href={rest.href}>
         <span className="rounded-lg bg-gray-100 py-2 px-3 not-italic leading-none text-gray-700">
           {label}
         </span>
