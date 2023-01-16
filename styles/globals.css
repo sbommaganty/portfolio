@@ -5,3 +5,7 @@
 .custom-container {
   @apply mx-auto mb-16 flex w-full max-w-5xl flex-col items-start justify-center sm:mt-16;
 }
+
+.chip {
+  @apply rounded-lg bg-gray-800 px-2 py-1 text-lg not-italic leading-none text-white dark:bg-white dark:text-black sm:text-base;
+}

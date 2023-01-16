@@ -11,24 +11,16 @@ const Chip = ({ type = "normal", label, ...rest }: ChipProps) => {
 
     return isInternalLink ? (
       <Link href={rest.href}>
-        <span className="rounded-lg bg-gray-100 py-2 px-3 not-italic leading-none text-gray-700">
-          {label}
-        </span>
+        <span className="chip">{label}</span>
       </Link>
     ) : (
-      <a href={rest.href}>
-        <span className="rounded-lg bg-gray-100 py-2 px-3 not-italic leading-none text-gray-700">
-          {label}
-        </span>
+      <a href={rest.href} rel="noopener noreferrer">
+        <span className="chip">{label}</span>
       </a>
     );
   }
 
-  return (
-    <span className="rounded-lg bg-gray-100 py-2 px-3 not-italic leading-none text-gray-700">
-      {label}
-    </span>
-  );
+  return <span className="chip">{label}</span>;
 };
 
 export default Chip;
