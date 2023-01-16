@@ -9,21 +9,21 @@ export const socialLinks = {
   instagram: "https://www.instagram.com/alamariful1727",
 };
 export const aboutNavigation = { name: "About", href: "/about" };
-export const worksNavigation = { name: "Works", href: "/works" };
+export const experienceNavigation = { name: "Experience", href: "/experience" };
 export const projectsNavigation = { name: "Projects", href: "/projects" };
 export const contactNavigation = { name: "Contact", href: "/contact" };
 
 export const navigation = {
   header: [
     aboutNavigation,
-    worksNavigation,
     projectsNavigation,
+    experienceNavigation,
     contactNavigation,
   ],
   footer: [
     aboutNavigation,
-    worksNavigation,
     projectsNavigation,
+    experienceNavigation,
     contactNavigation,
   ],
 };
