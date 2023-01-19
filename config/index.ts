@@ -28,3 +28,7 @@ export const navigation = {
     contactNavigation,
   ],
 };
+
+export const AboutPage = {
+  skills: ["Node.js", "React.js", "Python", "Next.js", "AWS", "TypeScript"],
+};
