@@ -42,7 +42,7 @@ export default function About() {
             width={400}
             quality={100}
             src={avatar}
-            className="w-64 rounded-md sm:w-72 lg:w-full"
+            className="w-64 rounded-md sm:w-72 lg:w-96"
             placeholder="blur"
           />
         </div>
