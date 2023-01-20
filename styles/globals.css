@@ -13,7 +13,3 @@
 .p-about {
   @apply text-justify text-lg tracking-tight text-gray-700 dark:text-gray-300 sm:space-y-3 sm:tracking-normal;
 }
-
-.p-about-important {
-  @apply font-semibold dark:text-white;
-}
