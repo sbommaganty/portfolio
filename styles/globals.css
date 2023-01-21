@@ -14,6 +14,6 @@
   @apply mb-4 text-3xl font-bold tracking-tight text-black dark:text-white sm:mb-8 md:text-5xl;
 }
 
-.p-about {
+.styled-p {
   @apply text-justify text-lg tracking-tight text-gray-700 dark:text-gray-300 sm:space-y-3 sm:tracking-normal;
 }
