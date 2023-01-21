@@ -10,6 +10,10 @@
   @apply rounded-lg bg-gray-800 px-2 py-1 text-lg not-italic leading-none text-white dark:bg-white dark:text-black sm:text-base;
 }
 
+.heading {
+  @apply mb-4 text-3xl font-bold tracking-tight text-black dark:text-white sm:mb-8 md:text-5xl;
+}
+
 .p-about {
   @apply text-justify text-lg tracking-tight text-gray-700 dark:text-gray-300 sm:space-y-3 sm:tracking-normal;
 }
