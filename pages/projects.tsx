@@ -133,13 +133,12 @@ export default function Projects() {
     <Container>
       <SEO siteTitle="Projects" />
       <h1 className="heading">Projects</h1>
-      <p className="styled-p">
+      <p className="sub-heading p">
         There are two types of projects. Some of them are both{" "}
-        <span className="font-semibold dark:text-white">Professional</span> and{" "}
-        <span className="font-semibold dark:text-white">Personal</span>{" "}
-        projects.
+        <span className="font-semibold">Professional</span> and{" "}
+        <span className="font-semibold">Personal</span> projects.
       </p>
-      <div className="mt-10 grid grid-cols-1 gap-y-12">
+      <div className="mt-10 w-full space-y-16">
         {projectData
           .filter((v) => v.enabled)
           .map((project) => (
