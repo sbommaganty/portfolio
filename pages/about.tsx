@@ -11,23 +11,21 @@ export default function About() {
   return (
     <Container>
       <SEO siteTitle="About" />
-      <h1 className="mb-4 text-3xl font-bold tracking-tight text-black dark:text-white sm:mb-8 md:text-5xl">
-        About Me
-      </h1>
+      <h1 className="heading">About Me</h1>
       <div className="space-y-12 lg:flex lg:gap-12 lg:space-y-0">
         <div className="space-y-5 lg:space-y-6">
-          <p className="p-about">
+          <p className="sub-heading p">
             I believe that attitude makes aptitude. I commit myself one hundred
             percent to each project in which I have to participate. Sharing my
             knowledge and learning at every moment. Not only in technical
             aspects but also, personally.
           </p>
-          <p className="p-about">
+          <p className="sub-heading p">
             I am passionate about what I do and consider that passion to be the
             main engine, responsible for pushing me every day to achieve my
             professional and personal goals.
           </p>
-          <p className="p-about">
+          <p className="sub-heading p">
             I&apos;ve almost 4 years of experience in{" "}
             <span className="font-semibold dark:text-white">
               Software Development
