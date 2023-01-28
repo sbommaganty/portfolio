@@ -29,6 +29,7 @@ const projectData: ProjectData[] = [
       "Cypress",
       "AWS",
     ],
+    isProfessional: true,
     enabled: true,
     image: ssc,
   },
@@ -39,9 +40,11 @@ const projectData: ProjectData[] = [
       "Typhoon makes it easy to upload and share your film with the world.",
       "Virtual theater, streaming analytics and personal filmmaker portal.",
       "API development using Node.js & Python with DynamoDB.",
-      "Responsive web design with React.js.",
+      "Managed user subscriptions with Stripe.",
+      "Implement client‐side features with React.js followed by Figma UI/UX.",
     ],
     technologies: ["Node.js", "Python", "React.js", "DynamoDB", "AWS"],
+    isProfessional: true,
     enabled: true,
     image: typhoon,
   },
@@ -62,6 +65,7 @@ const projectData: ProjectData[] = [
       "Cognito",
       "AWS",
     ],
+    isProfessional: true,
     enabled: true,
     image: epl,
   },
@@ -72,9 +76,11 @@ const projectData: ProjectData[] = [
       "Jantt services are designed so that business owners will not have to perform any accounting functions or hire internal staff.",
       "API development using Python & Node.js with PostgreSQL.",
       "Data source integration with QuickBooks, and Gusto.",
+      "Managed user subscriptions with Stripe.",
       "Responsive web design with React.js.",
     ],
     technologies: ["Node.js", "Python", "React.js", "PostgreSQL", "AWS"],
+    isProfessional: true,
     enabled: true,
     image: jantt,
   },
@@ -87,6 +93,7 @@ const projectData: ProjectData[] = [
       "Responsive web design with React.js.",
     ],
     technologies: ["Python", "React.js", "PostgreSQL", "AWS"],
+    isProfessional: true,
     enabled: true,
     image: justasklucy,
   },
@@ -94,10 +101,15 @@ const projectData: ProjectData[] = [
     name: "The PLMC",
     url: "https:/www.securityscorecard.com",
     description: [
-      "Music Royalty Company who gather digital royalty for singers and producers.",
+      "Music Royalty Company gathers digital royalty for singers and producers.",
       "Collects royalty from Spotify.",
+      "Build backend server with Java Sprint.",
+      "Integrated Spotify to track artist's records.",
+      "Writing efficient queries in MongoDB.",
+      "Developed responsive web application with React.js.",
     ],
     technologies: ["Java Spring", "React.js", "MongoDB", "AWS"],
+    isProfessional: true,
     enabled: true,
     image: plmc,
   },
@@ -109,13 +121,22 @@ const projectData: ProjectData[] = [
       "Build nearby events feature with Google Map API & Geographic Document.",
       "API development using Node.js with MongoDB.",
       "Responsive web design with Next.js.",
+      "Developed responsive web application with React.js & Next.js.",
     ],
-    technologies: ["Node.js", "React.js", "Next.js", "MongoDB", "AWS"],
+    technologies: [
+      "Node.js",
+      "React.js",
+      "Next.js",
+      "MongoDB",
+      "Google Map API",
+      "AWS",
+    ],
+    isProfessional: true,
     enabled: false,
     image: onethread,
   },
   {
-    name: "TiGrow [Now: Onethread]",
+    name: "Onethread",
     url: "https://www.onethread.app",
     description: [
       "API development using Node.js with MongoDB.",
@@ -123,6 +144,20 @@ const projectData: ProjectData[] = [
       "Responsive web design with React.js.",
     ],
     technologies: ["Node.js", "React.js", "MongoDB", "AWS"],
+    isProfessional: true,
+    enabled: true,
+    image: onethread,
+  },
+  {
+    name: "Masjid Finder",
+    url: "",
+    description: [
+      "CRUD operations with Node.js REST-API & managed complex queries in MongoDB efficiently.",
+      "Find nearby masjid features with Google Map API and Geographic Document.",
+      "Developed responsive web application with React web platform.",
+    ],
+    technologies: ["Node.js", "React.js", "MongoDB"],
+    isProfessional: false,
     enabled: true,
     image: onethread,
   },
@@ -138,9 +173,9 @@ export default function Projects() {
         <span className="font-semibold">Professional</span> and{" "}
         <span className="font-semibold">Personal</span> projects.
       </p>
-      <div className="mt-10 w-full space-y-16">
+      <div className="mt-10 w-full space-y-8 md:mt-16 md:space-y-20">
         {projectData
-          .filter((v) => v.enabled)
+          .filter((v) => v.enabled && v.isProfessional)
           .map((project) => (
             <ProjectCard key={project.name} project={project} />
           ))}

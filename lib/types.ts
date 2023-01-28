@@ -6,5 +6,6 @@ export type ProjectData = {
   description: string[];
   technologies: string[];
   enabled: boolean;
+  isProfessional: boolean;
   image: StaticImageData;
 };
