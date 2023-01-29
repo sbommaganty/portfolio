@@ -6,7 +6,6 @@ import {
 } from "@heroicons/react/24/outline";
 
 import { ProjectData } from "lib/types";
-import Chip from "./Chip";
 
 interface props {
   project: ProjectData;
@@ -34,18 +33,20 @@ const ProjectCard = ({ project }: props) => {
         </div>
       </a>
       {/* small screen */}
-      <div className="absolute inset-5 overflow-hidden blur-md md:hidden">
+      <div className="absolute inset-0 overflow-hidden rounded-lg md:hidden">
         <Image
           alt={project.name}
           src={project.image}
           quality={100}
           placeholder="blur"
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover blur-lg"
         />
       </div>
-      <div className="z-10 m-auto max-h-max w-full space-y-4 rounded bg-gray-900/80 px-3 py-6 md:absolute md:inset-y-0 md:w-96">
+      <div className="z-10 m-auto max-h-max w-full space-y-4 rounded-lg bg-gray-900/80 px-4 py-6 md:absolute md:inset-y-0 md:w-96 md:px-6">
         <div className="flex justify-between">
-          <h2 className="text-2xl font-semibold text-white">{project.name}</h2>
+          <h2 className="text-2xl font-semibold leading-5 text-white">
+            {project.name}
+          </h2>
           <a
             href={project.url}
             target="_blank"
@@ -66,10 +67,13 @@ const ProjectCard = ({ project }: props) => {
             </div>
           ))}
         </div>
-        <div className="-m-1 flex flex-wrap">
+        <div className="-m-1 flex flex-wrap gap-1">
           {project.technologies.map((v, i) => (
-            <span key={i} className="m-1">
-              <Chip label={v} />
+            <span
+              key={i}
+              className="m-1 font-mono text-sm font-semibold leading-none text-gray-200"
+            >
+              {v}
             </span>
           ))}
         </div>
