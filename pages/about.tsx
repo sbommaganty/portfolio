@@ -12,7 +12,7 @@ export default function About() {
     <Container>
       <SEO
         siteTitle="About"
-        description="I am a Software Engineer at SecurityScorecard. I have almost 4 years of experience in Software Development where I've mostly worked with Node.js, Python, React.js and Next.js. In terms of cloud works, I've some hands on experience in AWS."
+        description="I'm passionate about what I do and consider that passion to be the main engine, responsible for pushing me every day to achieve my professional and personal goals."
       />
       <h1 className="heading">About Me</h1>
       <div className="space-y-12 lg:flex lg:gap-12 lg:space-y-0">
