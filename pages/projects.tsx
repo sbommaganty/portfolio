@@ -166,13 +166,20 @@ const projectData: ProjectData[] = [
 export default function Projects() {
   return (
     <Container>
-      <SEO siteTitle="Projects" />
+      <SEO
+        siteTitle="Projects"
+        description="I believe that attitude makes aptitude. I commit myself one hundred percent to each project in which I have to participate."
+      />
       <h1 className="heading">Projects</h1>
       <p className="sub-heading p">
+        I believe that attitude makes aptitude. I commit myself one hundred
+        percent to each project in which I have to participate.
+      </p>
+      {/* <p className="sub-heading p">
         There are two types of projects. Some of them are both{" "}
         <span className="font-semibold">Professional</span> and{" "}
         <span className="font-semibold">Personal</span> projects.
-      </p>
+      </p> */}
       <div className="mt-10 w-full space-y-8 md:mt-16 md:space-y-20">
         {projectData
           .filter((v) => v.enabled && v.isProfessional)

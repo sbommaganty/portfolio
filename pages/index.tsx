@@ -5,7 +5,10 @@ import { experienceNavigation, MY_EMAIL, projectsNavigation } from "config";
 export default function Home() {
   return (
     <div className="mx-auto max-w-4xl py-12 sm:py-28 md:py-40 lg:py-64">
-      <SEO />
+      <SEO
+        siteTitle="Ariful Alam"
+        description="I love to code because it is an usable art."
+      />
       <div className="space-y-10 sm:space-y-14">
         <div className="space-y-3 sm:space-y-4">
           <p className="p text-2xl tracking-tighter sm:text-2xl sm:tracking-normal">
