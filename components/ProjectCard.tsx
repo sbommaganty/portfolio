@@ -16,7 +16,7 @@ const ProjectCard = ({ project }: props) => {
     <div className="relative flex">
       {/* medium <= screen */}
       <a
-        title="project.name"
+        title={project.name}
         href={project.url}
         target="_blank"
         rel="noopener noreferrer"
