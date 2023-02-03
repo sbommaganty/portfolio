@@ -27,6 +27,5 @@ export type ExperienceData = {
   technologies: {
     name: string;
     href: string;
-    color: string;
   }[];
 };

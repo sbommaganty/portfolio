@@ -8,10 +8,6 @@ interface props {
   isLastTime: boolean;
 }
 
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
-
 const ExperienceItem = ({ experience, isLastTime }: props) => {
   return (
     <li className="pb-8 last:pb-0">
@@ -92,18 +88,9 @@ const ExperienceItem = ({ experience, isLastTime }: props) => {
                       rel="noopener noreferrer"
                       title={technology.name}
                       href={technology.href}
-                      className="relative inline-flex items-center rounded-full border border-gray-700 px-3 py-0.5 text-sm dark:border-gray-200"
+                      className="relative inline-flex items-center rounded-full border border-gray-700 px-2 py-0.5 text-sm dark:border-gray-200"
                     >
-                      <span className="absolute flex shrink-0 items-center justify-center">
-                        <span
-                          className={classNames(
-                            technology.color,
-                            "h-1.5 w-1.5 rounded-full"
-                          )}
-                          aria-hidden="true"
-                        />
-                      </span>
-                      <span className="ml-3.5 text-xs font-medium text-gray-700 dark:text-gray-200 sm:text-sm">
+                      <span className="text-xs font-medium text-gray-700 dark:text-gray-200 sm:text-sm">
                         {technology.name}
                       </span>
                     </a>
