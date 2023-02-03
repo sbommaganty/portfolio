@@ -18,7 +18,7 @@ const ExperienceItem = ({ experience, isLastTime }: props) => {
       <div className="relative">
         {!isLastTime && (
           <span
-            className="absolute top-10 left-5 ml-px h-full w-0.5 bg-gray-600/60"
+            className="absolute top-10 left-5 ml-px h-full w-0.5 bg-gray-700 dark:bg-white"
             aria-hidden="true"
           />
         )}
@@ -29,7 +29,7 @@ const ExperienceItem = ({ experience, isLastTime }: props) => {
               rel="noopener noreferrer"
               title={experience.company.name}
               href={experience.company.href}
-              className="overflow-hidden rounded-md border-2 border-gray-600/60"
+              className="overflow-hidden rounded-md border-2 border-gray-700 dark:border-white"
             >
               <Image
                 alt={experience.company.name}
@@ -47,18 +47,20 @@ const ExperienceItem = ({ experience, isLastTime }: props) => {
                       rel="noopener noreferrer"
                       title={experience.company.name}
                       href={experience.company.href}
-                      className="font-semibold text-gray-900 hover:underline"
+                      className="font-semibold text-gray-900 hover:underline dark:text-white"
                     >
                       {experience.company.name}
                     </a>
                   </div>
-                  <p className="text-sm font-medium text-gray-800 sm:mt-0.5">
+                  <p className="text-sm font-medium text-gray-800 dark:text-gray-200 sm:mt-0.5">
                     {experience.position}
                   </p>
                 </div>
                 <div className="flex flex-col sm:items-end">
-                  <p className="text-sm text-gray-900">{experience.location}</p>
-                  <p className="mt-0.5 text-sm text-gray-500">
+                  <p className="text-sm text-gray-900 dark:text-gray-200">
+                    {experience.location}
+                  </p>
+                  <p className="mt-0.5 text-sm text-gray-500 dark:text-gray-400">
                     {`${experience.duration.from} - ${
                       experience.isWorkingNow
                         ? "Present"
@@ -67,20 +69,22 @@ const ExperienceItem = ({ experience, isLastTime }: props) => {
                   </p>
                 </div>
               </div>
-              <div className="mt-3 space-y-1">
+              <div className="mt-3 space-y-1.5">
                 {experience.description.map((v, i) => (
-                  <div key={i} className="flex space-x-2 text-sm text-gray-800">
+                  <div key={i} className="flex space-x-2 text-sm">
                     <span className="flex h-4 shrink-0 items-center justify-center">
                       <span
-                        className="h-0.5 w-1.5 rounded-full bg-gray-400"
+                        className="h-0.5 w-1.5 rounded-full bg-gray-700 dark:bg-gray-200"
                         aria-hidden="true"
                       />
                     </span>
-                    <p className="flex-1 leading-4 tracking-wide">{v}</p>
+                    <p className="flex-1 leading-4 tracking-wide text-gray-900 dark:text-gray-200">
+                      {v}
+                    </p>
                   </div>
                 ))}
               </div>
-              <div className="mt-4 flex flex-wrap gap-1">
+              <div className="mt-5 flex flex-wrap gap-1">
                 {experience.technologies.map((technology) => (
                   <Fragment key={technology.name}>
                     <a
@@ -88,7 +92,7 @@ const ExperienceItem = ({ experience, isLastTime }: props) => {
                       rel="noopener noreferrer"
                       title={technology.name}
                       href={technology.href}
-                      className="relative inline-flex items-center rounded-full border border-gray-300 px-3 py-0.5 text-sm"
+                      className="relative inline-flex items-center rounded-full border border-gray-700 px-3 py-0.5 text-sm dark:border-gray-200"
                     >
                       <span className="absolute flex shrink-0 items-center justify-center">
                         <span
@@ -99,7 +103,7 @@ const ExperienceItem = ({ experience, isLastTime }: props) => {
                           aria-hidden="true"
                         />
                       </span>
-                      <span className="ml-3.5 font-medium text-gray-900">
+                      <span className="ml-3.5 text-xs font-medium text-gray-700 dark:text-gray-200 sm:text-sm">
                         {technology.name}
                       </span>
                     </a>
