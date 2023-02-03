@@ -24,14 +24,20 @@ const ExperienceItem = ({ experience, isLastTime }: props) => {
         )}
         <div className="relative flex items-start space-x-3">
           <Fragment>
-            <span className="overflow-hidden rounded-md border-2 border-gray-600/60">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              title={experience.company.name}
+              href={experience.company.href}
+              className="overflow-hidden rounded-md border-2 border-gray-600/60"
+            >
               <Image
                 alt={experience.company.name}
                 src={experience.image}
                 placeholder="blur"
                 className="h-10 w-10"
               />
-            </span>
+            </a>
             <div className="min-w-0 flex-1">
               <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-0">
                 <div>
@@ -41,7 +47,7 @@ const ExperienceItem = ({ experience, isLastTime }: props) => {
                       rel="noopener noreferrer"
                       title={experience.company.name}
                       href={experience.company.href}
-                      className="font-semibold text-gray-900"
+                      className="font-semibold text-gray-900 hover:underline"
                     >
                       {experience.company.name}
                     </a>
