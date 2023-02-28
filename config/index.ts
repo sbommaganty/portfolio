@@ -120,3 +120,5 @@ export const technologies = {
     href: "https://www.chaijs.com/",
   },
 };
+
+export const gtag = process.env.NEXT_PUBLIC_GA_TRACKING_ID;
