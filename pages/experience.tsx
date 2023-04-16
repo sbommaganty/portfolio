@@ -2,6 +2,7 @@ import Container from "components/Container";
 import SEO from "components/SEO";
 import { ExperienceData } from "lib/types";
 import ExperienceItem from "components/ExperienceItem";
+import fairstone from "public/static/offices/fairstone.jpeg";
 import ssc from "public/static/offices/ssc.webp";
 import epsilon from "public/static/offices/epsilon.jpeg";
 import ayoojon from "public/static/offices/ayoojon.jpeg";
@@ -9,6 +10,34 @@ import onethread from "public/static/offices/onethread.jpeg";
 import { technologies } from "config";
 
 const experienceData: ExperienceData[] = [
+  {
+    company: {
+      name: "Fairstone Bank",
+      href: "https://www.fairstone.ca/",
+    },
+    position: "Sr. Full Stack Developer",
+    location: "Montreal, QC, Canada",
+    duration: {
+      from: "Apr 2023",
+    },
+    isWorkingNow: true,
+    image: fairstone,
+    description: [
+      "Successfully migrated legacy projects to Typescript, improving code maintainability and reducing potential bugs.",
+      "Debugged legacy code to optimize performance with updated libraries and styling standards, resulting in faster load times and improved user experience.",
+      "Leveraged Material-UI and Typescript to build reusable components, leading to faster development times and a more consistent user experience.",
+      "Designed and implemented serverless solutions using Lambda functions and CDK, resulting in significant cost savings and improved scalability.",
+      "Conducted thorough code reviews, ensuring adherence to code quality best practices and identifying opportunities for improvement.",
+      "Wrote unit tests using Jest and React Testing Library to ensure the reliability and stability of code changes.",
+    ],
+    technologies: [
+      technologies.node,
+      technologies.react,
+      technologies.typescript,
+      technologies.jest,
+      technologies.aws,
+    ],
+  },
   {
     company: {
       name: "SecurityScorecard",

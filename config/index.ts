@@ -119,6 +119,10 @@ export const technologies = {
     name: "Chai",
     href: "https://www.chaijs.com/",
   },
+  typescript: {
+    name: "TypeScript",
+    href: "https://www.typescriptlang.org/",
+  },
 };
 
 export const gtag = process.env.NEXT_PUBLIC_GA_TRACKING_ID;
