@@ -23,12 +23,15 @@ const experienceData: ExperienceData[] = [
     isWorkingNow: true,
     image: fairstone,
     description: [
+      "Received the Fairstone Ovation Award at Fairstone Bank for consistently exceeding expectations and delivering exceptional performance.",
+      "Led and directed cross-functional teams on two major projects, steering the development process from inception to successful deployment.",
       "Successfully migrated legacy projects to Typescript, improving code maintainability and reducing potential bugs.",
       "Debugged legacy code to optimize performance with updated libraries and styling standards, resulting in faster load times and improved user experience.",
-      "Leveraged Material-UI and Typescript to build reusable components, leading to faster development times and a more consistent user experience.",
       "Designed and implemented serverless solutions using Lambda functions and CDK, resulting in significant cost savings and improved scalability.",
-      "Conducted thorough code reviews, ensuring adherence to code quality best practices and identifying opportunities for improvement.",
+      "Leveraged Material-UI and Typescript to build reusable components, leading to faster development times and a more consistent user experience.",
       "Wrote unit tests using Jest and React Testing Library to ensure the reliability and stability of code changes.",
+      "Conducted thorough code reviews, ensuring adherence to code quality best practices and identifying opportunities for improvement.",
+      "Mentored and coached junior developers, fostering a collaborative and growth-oriented environment, resulting in increased team productivity and skill development.",
     ],
     technologies: [
       technologies.node,

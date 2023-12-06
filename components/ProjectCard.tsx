@@ -20,7 +20,7 @@ const ProjectCard = ({ project }: props) => {
         href={project.url}
         target="_blank"
         rel="noopener noreferrer"
-        className="hidden w-full overflow-hidden rounded-lg border dark:border-gray-700 md:ml-24 md:block lg:ml-56"
+        className="hidden w-full overflow-hidden rounded-lg border dark:border-gray-700 md:block lg:ml-56"
       >
         <div className="aspect-h-11 aspect-w-16 blur hover:blur-none">
           <Image
@@ -42,9 +42,9 @@ const ProjectCard = ({ project }: props) => {
           className="h-full w-full object-cover blur-lg"
         />
       </div>
-      <div className="z-10 m-auto max-h-max w-full space-y-4 rounded-lg bg-gray-900/80 px-4 py-6 md:absolute md:inset-y-0 md:w-96 md:px-6">
+      <div className="z-10 m-auto max-h-max w-full space-y-4 rounded-lg bg-gray-900/80 px-4 py-6 md:absolute md:inset-y-0 md:w-4/6 md:px-6">
         <div className="flex justify-between">
-          <h2 className="text-2xl font-semibold leading-5 text-white">
+          <h2 className="text-xl font-semibold leading-5 text-white">
             {project.name}
           </h2>
           <a
