@@ -9,8 +9,43 @@ import jantt from "public/static/projects/jantt.png";
 import justasklucy from "public/static/projects/justasklucy.png";
 import plmc from "public/static/projects/plmc.png";
 import onethread from "public/static/projects/onethread.png";
+import dfa from "public/static/projects/dfa.png";
+import iq from "public/static/projects/iq.png";
 
 const projectData: ProjectData[] = [
+  {
+    name: "Digital Financing Application",
+    url: "https://web.fairstone.ca/bestbuy",
+    description: [
+      "Designed intricate APIs and AWS Step Functions for a robust, serverless orchestration service in the backend system.",
+      "Guided and supervised a team of developers, serving as the lead on the project.",
+      "Spearheaded the end-to-end migration and development of the platform.",
+      "Leveraged React.js and TypeScript to execute the development of the web application.",
+      "Ensured seamless error tracking and user event monitoring on both frontend and backend systems through TrackJS.",
+      "Write test cases for both backend (Jest) and frontend (Jest & React Testing Library).",
+      "Mentored and coached junior developers, fostering a collaborative and growth-oriented environment.",
+    ],
+    technologies: ["Node.js", "React.js", "Jest", "DynamoDB", "AWS"],
+    isProfessional: true,
+    enabled: true,
+    image: dfa,
+  },
+  {
+    name: "Instant Quotes",
+    url: "https://apply.fairstone.ca/",
+    description: [
+      "Spearheaded the end-to-end migration and development of the platform.",
+      "Leveraged React.js and TypeScript to execute the development of the web application.",
+      "Constructed project infrastructure with Node.js, TypeScript, and AWS services (Lambda, DynamoDB) for scalable, seamless functionality.",
+      "Ensured seamless error tracking and user event monitoring on both frontend and backend systems through TrackJS.",
+      "Write test cases for both backend (Jest) and frontend (Jest & React Testing Library).",
+      "Mentored and coached junior developers, fostering a collaborative and growth-oriented environment.",
+    ],
+    technologies: ["Node.js", "React.js", "Jest", "DynamoDB", "AWS"],
+    isProfessional: true,
+    enabled: true,
+    image: iq,
+  },
   {
     name: "SecurityScorecard",
     url: "https:/www.securityscorecard.com",
