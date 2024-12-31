@@ -23,7 +23,6 @@
   },
   "plugins": ["react", "@typescript-eslint", "tailwindcss"],
   "rules": {
-    "prettier/prettier": ["error"],
     "semi": ["error", "always"],
     "no-unused-vars": "error"
   }
