@@ -9,7 +9,7 @@
     "plugin:@typescript-eslint/recommended",
     "next",
     "next/core-web-vitals",
-    "plugin:tailwindcss/recommended",
+    "plugin:tailwindcss/recommended"
    ],
   "overrides": [],
   "parser": "@typescript-eslint/parser",
