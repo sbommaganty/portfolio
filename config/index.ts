@@ -1,13 +1,13 @@
-export const APP_TITLE = "Ariful Alam";
+export const APP_TITLE = "Swamynathan Bommaganty";
 export const APP_DESCRIPTION = "This is my portfolio website.";
-export const MY_IMAGE_URL = "https://www.arifulalam.com/static/avatar-seo.jpeg";
-export const MY_EMAIL = "alamariful1727@gmail.com";
+export const MY_IMAGE_URL = "'../../portfolio/public/static/avatar-seo.jpeg'";
+export const MY_EMAIL = "swamynathan.bommaganty@gmail.com";
 export const socialLinks = {
-  facebook: "https://www.facebook.com/alamariful1727",
-  linkedin: "https://www.linkedin.com/in/alamariful1727",
-  github: "https://github.com/alamariful1727",
-  twitter: "https://twitter.com/alamariful1727",
-  instagram: "https://www.instagram.com/alamariful1727",
+  facebook: "",
+  linkedin: "https://www.linkedin.com/in/swamynathan-bommaganty-50a722154/",
+  github: "https://github.com/sbommaganty",
+  twitter: "",
+  instagram: "",
 };
 export const aboutNavigation = { name: "About", href: "/about" };
 export const experienceNavigation = { name: "Experience", href: "/experience" };
@@ -36,26 +36,27 @@ export const AboutPage = {
 export const technologies = {
   node: { name: "Node.js", href: "https://nodejs.org/" },
   react: {
-    name: "React.js",
-    href: "https://reactjs.org/",
+    name: "React Native",
+    href: "https://reactnative.dev/",
   },
-  d3: { name: "D3", href: "https://d3js.org/" },
+  
+  iOS: { name: "iOS", href: "https://developer.apple.com/tutorials/app-dev-training/" },
   jest: { name: "Jest", href: "https://jestjs.io/" },
-  cypress: {
-    name: "Cypress",
-    href: "https://www.cypress.io/",
+  javascript: {
+    name: "JavaScript",
+    href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
-  swagger: {
-    name: "Swagger",
-    href: "https://swagger.io/",
+  swift: {
+    name: "Swift",
+    href: "https://developer.apple.com/swift/",
   },
   postgresql: {
     name: "PostgreSQL",
     href: "https://www.postgresql.org/",
   },
-  mongodb: {
-    name: "MongoDB",
-    href: "https://www.mongodb.com/",
+  nestjs: {
+    name: "Nest.js",
+    href: "https://nestjs.com/",
   },
   dynamodb: {
     name: "DynamoDB",

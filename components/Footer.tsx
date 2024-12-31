@@ -95,9 +95,6 @@ export default function Footer() {
           </a>
         ))}
       </div>
-      <p className="text-center text-base text-gray-500 dark:text-gray-500">
-        &copy; {new Date().getFullYear()} Ariful Alam. All rights reserved.
-      </p>
     </footer>
   );
 }

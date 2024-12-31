@@ -13,7 +13,7 @@ interface props {
 
 const ProjectCard = ({ project }: props) => {
   return (
-    <div className="relative flex">
+  <div className="relative flex">
       {/* medium <= screen */}
       <a
         title={project.name}
@@ -26,6 +26,7 @@ const ProjectCard = ({ project }: props) => {
           <Image
             alt={project.name}
             src={project.image}
+            width={180}
             quality={100}
             placeholder="blur"
             className="h-full w-full"
