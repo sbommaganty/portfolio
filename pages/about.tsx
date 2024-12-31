@@ -1,5 +1,5 @@
 import Image from "next/image";
-import avatar from "../../portfolio/public/static/avatar.jpg";
+import avatar from "public/static/avatar.jpg";
 import SEO from "components/SEO";
 import Container from "components/Container";
 import { PaperAirplaneIcon } from "@heroicons/react/24/outline";
